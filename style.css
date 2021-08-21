@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(219, 79%, 66%);
+  background-image: url(./img/ribbon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+.countdown-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.largetext {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+.cd {
+  text-align: center;
+}
+
+.cd span {
+  font-size: 2rem;
+}
