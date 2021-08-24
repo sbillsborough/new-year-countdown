@@ -45,9 +45,13 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .largetext,
-  .cd span,
   h1 {
     font-size: 2rem;
+  }
+  .largetext {
+    font-size: 1.5rem;
+  }
+  .cd span {
+    font-size: 1rem;
   }
 }
