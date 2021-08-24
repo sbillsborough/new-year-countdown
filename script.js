@@ -11,7 +11,7 @@ function countDown() {
   const sec = (nyd - currentDate) / 1000;
 
   const days = Math.floor(sec / 3600 / 24);
-  const hours = Math.floor(sec / 3600 / 24);
+  const hours = (Math.floor(sec / 3600) % 24) - 1;
   const min = Math.floor(sec / 60) % 60;
   const seco = Math.floor(sec % 60);
   daysE1.innerHTML = days;
@@ -21,7 +21,7 @@ function countDown() {
 }
 
 function format(n) {
-  return n > 10 ? "0" + n : n;
+  return n < 10 ? "0" + n : n;
 }
 
 countDown();
